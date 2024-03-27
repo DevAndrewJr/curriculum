@@ -1,0 +1,34 @@
+
+
+@media print {
+    body {
+        margin: 0;
+    }
+    
+    @page {
+    margin-bottom: 2cm;
+    margin-left, margin-right: 0;
+    }
+    
+    .print-margin {
+    display: block;
+    }    
+    
+    .cv-logo {
+        display: none; /* Nascondi l'elemento con la classe .cv-logo */
+    }
+
+    .bar {
+        display: none; /* Nascondi l'elemento con la classe .bar */
+    }
+
+    .contentHeadBar {
+        display: none; /* Nascondi l'elemento con la classe .contentHeadBar */
+    }
+    
+    .void{
+        display: none;
+    }
+
+
+}

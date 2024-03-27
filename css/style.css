@@ -1,0 +1,282 @@
+body{
+    margin: 30px;
+    opacity: 0;
+    transition: opacity 2s;
+}
+
+.container {
+    display: flex;
+    min-width: 40%;
+    flex-direction: column;
+    align-items: center;
+    background-color: #F6F6F6;
+    border-radius: 15px;
+    border: thin dotted #888787;
+}
+
+.titleBar{
+    text-align: center;
+    margin-bottom: 5px;
+    padding-top: 25px;
+}
+
+.titleCurriculum{
+    font-size: 30px;
+    font-family: verdana;
+    color: #676767;
+    font-weight: bold;
+    opacity: 0;
+    animation: fadeInAnimationCV 2s ease forwards;
+    animation-delay: 2s;
+    position: relative;
+    bottom: 13px;
+    
+    
+}
+
+.bar{
+    width: 100%;
+    height: 40px;
+    background-color: #ECECEC;
+    border: thin dotted #888787;
+    
+}
+
+.contentHeadBar{  
+    display:block;
+    font-family: verdana;
+    font-size: 13px;
+    color: #676767;
+    text-align: right;
+    margin-right: 38px;  
+    margin-top: 4px;
+}
+
+.cv-logo{
+    width: 50px;
+    margin-right: 5px;
+    /* filter: sepia(100%) blur(5px); -webkit-filter: sepia(100%); */
+    filter: grayscale(100%); -webkit-filter: grayscale(100%); 
+    opacity: 0;
+    /*
+    Nome dell'animazione: "upDownAnimationCvLogo". Questo è il nome assegnato all'animazione CSS.
+    - Durata: "2s". Indica la durata dell'animazione, che è di 2 secondi.
+    - Timing function: "ease". Specifica la funzione temporale che definisce come l'animazione varia nel tempo. 
+    In questo caso, "ease" indica un'iniziale accelerazione graduale e un finale di decelerazione graduale.
+    - Fill mode: "forwards". Indica come gli stili dell'elemento animato dovrebbero essere applicati dopo che 
+    l'animazione è stata completata. "Forwards" significa che l'elemento manterrà lo stato finale dell'animazione 
+    dopo il completamento.
+    */
+    
+    animation: upDownAnimationCvLogo 1s ease forwards;
+    animation-delay: 4s;
+}
+
+
+.content {
+    display: flex;
+}
+
+.left-column {
+    padding: 30px;
+    width: 30%;
+}
+
+.right-column {
+    border-left: 1px dotted #989898;
+    padding: 30px;
+    width: 65%;
+}
+
+
+h2 {
+    color: #6D6D6D;
+    font-family: verdana;
+    background-color: #E8E8E8;
+    border-radius: 5px;
+    border: 2px solid #5A5A56;
+    padding: 8px;
+    
+}
+
+h2 div {
+    display: inline;
+
+}
+
+
+div.right-column ul li i{
+    color: brown;
+    font-size: 22px;  
+}
+
+ul{
+    list-style-type: none;
+}
+
+div.right-column ul{
+    border-bottom: 1px dotted #323232;
+    padding-bottom: 7px;
+}
+
+li{
+    margin-bottom: 6px;
+    margin-left: -18px !important;   
+}
+
+a{
+    text-decoration: none;
+    color: #545454;
+}
+
+a:hover{
+    padding-bottom: 3px;
+    padding-top: 3px;
+    background-color: antiquewhite;
+    font-weight: bold;
+}
+
+a[href="https://www.linkedin.com/in/andrea-giaimis-17b768b7/"] {
+    color: #E07E1D;
+   
+}
+
+a[href="https://www.linkedin.com/in/andrea-giaimis-17b768b7/"]:hover {
+    color: #E07E1D;
+    border-bottom: thin solid #C5C5C5;
+    border-top: thin solid #C5C5C5 ;
+}
+
+.descriptionTitle{
+    font: normal bold 13px verdana;
+    
+}
+
+.descriptionValue{
+    font: normal normal 13px verdana;    
+    color: #3E3E3E;
+    margin-left: 5px;
+}
+
+
+.right-column ul li:first-child {
+    color: brown;
+    font-size: 14px;
+    background-color: antiquewhite;
+    padding: 5px; 
+    border-radius: 3px;
+    border: 1px dotted #B1AFAF;  
+}
+
+/* description title first child */
+.right-column ul li:first-child span.descriptionTitle {
+    font-size: 1em;
+    font-weight: bold;
+    color: #a52a2a;
+    font-weight: bold;
+    position: relative;
+    left: 5px;
+    bottom: 3px;
+    
+}
+
+
+/* description value first child */
+.right-column ul li:first-child span.descriptionValue {
+    color: #4E4D5A;
+    font-weight: bold;
+    background-color: #E0E0DF;
+    padding: 2px 7px 2px 7px;
+    border-radius: 4px;
+    position: relative;
+    left: 5px;
+    bottom: 3px;
+}
+
+/* description value last child */
+.right-column ul li:last-child span.descriptionValue {
+    text-align: justify;
+    display: table-row;
+    text-align-last: left;
+}
+
+
+.right-column ul div.descriptionSkills li{
+    background-color: #EDEDF4;
+    border: 1px dotted #919191;
+    border-radius: 7px;
+    font: normal normal 13px verdana;  
+    color: #4E4D5A;
+    text-align: justify;
+    display: table-row;
+    text-align-last: left;
+    position: relative;
+    left: -5px;
+    display: block;
+    padding: 10px;
+}
+
+.right-column ul div.descriptionSkills li:first-child{
+    background-color: #EDEDF4;
+    border: 1px dotted #919191;
+    padding: 0;
+}
+
+.right-column ul div.descriptionSkills li ul{
+    border-bottom: none;
+}
+
+
+.right-column ul div.descriptionSkills li ul li{
+    
+    background-color: #EDEDF4;
+    border: none;
+    top: 5px;
+    padding: 3px;
+}
+
+.right-column ul div.descriptionSkills li ul li:first-child{
+    background-color: #EDEDF4;
+    border: none;
+    top: 5px;
+    left: -5px;
+    padding: 3px;
+}
+
+.right-column ul div.descriptionSkills li ul li span i{
+    font-size: 10px;
+    color: #A8A8A8;
+}
+
+
+
+.void{
+    height: 30px;
+}
+
+
+
+@keyframes fadeInAnimationCV{
+    0%{
+        opacity: 0;
+        color:#999907;
+         
+    }
+    
+    100%{
+        opacity: 1;  
+        color: #676767;
+    }
+}
+
+@keyframes upDownAnimationCvLogo{
+    0%{
+        opacity: 0;
+        transform: translateY(-500px)
+    }
+    
+    100%{
+        opacity: 1;
+        transform: translateY(0)
+    }
+}

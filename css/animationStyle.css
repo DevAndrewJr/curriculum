@@ -1,0 +1,13 @@
+        /* Stili per gli h2 inizialmente nascosti */
+        .right-column h2,
+        .left-column h2 {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.5s ease, transform 0.5s ease;
+        }
+
+        /* Stili per gli h2 visibili */
+        .visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
